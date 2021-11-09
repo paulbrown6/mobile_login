@@ -12,7 +12,7 @@ class PasswordValidator{
 
   String password;
 
-  bool get isValid => password.length > 8 ? true : false;
+  bool get isValid => password.length > 7 ? true : false;
 
   PasswordValidator(this.password);
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mobile_logi/pages/auth_page.dart';
 import 'package:mobile_logi/pages/start_page.dart';
 
 void main() {
@@ -18,9 +19,11 @@ class _MyHomePage extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
-      home: StartPage(),
+      routes: {
+        '/': (context) => StartPage(),
+        '/auth': (context) => AuthPage(),
+      },
     );
   }
 }

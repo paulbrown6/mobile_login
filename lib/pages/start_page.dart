@@ -36,9 +36,7 @@ class StartPage extends StatelessWidget{
                               child:
                               GradientButton(
                                 onPressed: () {
-                                  Navigator.push(context, MaterialPageRoute(
-                                    builder: (context) => const AuthPage(),
-                                  ));
+                                  Navigator.pushNamed(context, '/auth');
                                 },
                                 buttonText: 'Войти',
                               ),
